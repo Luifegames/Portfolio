@@ -1,69 +1,13 @@
-html{
-    overflow-x: hidden;
-   width: 100vw;
-}
-
-.sticky-top{
-display: flex;
-
-}
-
-
-.containe{
-    margin-left: 15%;
-margin-right: 15%;
-padding-top: 30px;
-background-color:white;
-display: block;
-}
-
-body{
+body {
     margin: 0px;
-    width: 100vw;
     justify-content: center;
-    background-image: url("/src/img/background.png");
+    background-image: url("src/img/background.png");
     background-attachment: fixed;
     background-size: 70px;
 }
 
-#container-logo{
-    background-color: white;
-    margin-top: 10vh;
-    margin-left: 0px ;
-     z-index: 100;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.213);
-   
-}
-.logo{
-    width: 80px;
-}
 
 
-
-.banner>img {
-    z-index: -2;
-}
-
-.banner {
-    display: flex;
-    justify-content: center; 
-    margin: auto;
-    height: 10vh;
-}
-
-
-
-
-#logo{
-    display: flex;
-    width: 50%;
-    justify-content: left;
-    margin: 0px;
-    transform: translateX(100%);
-    padding: 0px;
-    left: 50%;
-    z-index: 100;
-}
 h1 {
     text-align: center;
 }
@@ -72,58 +16,54 @@ h3 {
     text-align: center;
 }
 
-.language{
+.language {
     gap: 20px;
-    display: flex;
-    justify-content: center;
 }
 
-.language>img{
+.language>img {
     width: 80px;
     object-fit: contain;
 }
 
-p{
+p {
     color: black;
     user-select: none;
     text-align: justify;
 }
-#cards{
-    justify-content: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-.navbar-na{
-display: flex;
-list-style-type: none;
-text-align: center;
-opacity: 0;
 
+.navbar{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.213);
 }
-.navbar-na li {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    margin: auto;
-}
-.button-links{
-    display: flex;
-    align-content: center;
 
-}
-.navbar-na a{
-    color: black;
-    margin: auto;
+.navbar-nav {
     text-align: center;
 }
 
-.social-media{
+.language img:hover{
+    
+    animation: scale .1s ease-in forwards;
+}
+
+
+
+@keyframes scale {
+    
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.social-media {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
-.social-media a{
+.social-media a:hover{
+    animation: scale .1s ease-in forwards;
+}
+
+.social-media a {
     text-decoration: none;
     color: black;
     font-size: 60px;

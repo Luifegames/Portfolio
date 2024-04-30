@@ -4,102 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="/main.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/809aa9ca57.js" crossorigin="anonymous"></script>
+   
     <title>Luife Games</title>
   </head>
   <body onload="cards()">
-    <div class="fixed-top" style="z-index: -3">
-      <div class="banner" id="banner">
-        <img src="src/img/Banner.png" alt="" />
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="src/img/logo.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        /> </a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"
+            >Who I'm? </a
+          >
+          <a class="nav-item nav-link" href="#experience">Experience</a>
+          <a class="nav-item nav-link" href="#my-games">My Games</a>
+          <a class="nav-item nav-link" href="#social-media">Social Media</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="offset-1 col-10">
+          <h1>Hello, <b>I'm Luife</b></h1>
+          <p style="background-color: white">
+            I'm a computer engineer. In my free time I develop
+            <b>videogames</b> as a hobby with the aim of acquiring a lot of
+            knowledge so that one day I can work for a videogames industry. With
+            more than 5 years of experience making videogames, I have more than
+            10 videogames published on <b>Itch.io</b>, from small roguelike
+            that are only played with the mouse, to funny stories about African
+            animals.
+          </p>
+        </div>
+      </div>
+      <div id="experience" style="margin-bottom: 80px"></div>
+      <div class="row">
+        <h1><b>Experience:</b></h1>
+      </div>
+      <div class="row">
+        <h3><b>Languages:</b></h3>
+      </div>
+      <div class="row">
+        <div class="language col-12">
+          <img src="src/icon/c-original.png" alt="c-original" />
+          <img src="src/icon/c.png" alt="c++" />
+          <img src="src/icon/java-original.png" alt="java-original" />
+          <img src="src/icon/javascript-js.png" alt="javascript-js" />
+          <img src="src/icon/python.png" alt="python" />
+          <img src="src/icon/vue.png" alt="vue" />
+        </div>
+      </div>
+      <div class="row">
+        <h3><b>Game Engine:</b></h3>
+      </div>
+      <div class="row">
+        <div class="language col-12">
+          <img src="src/icon/gamemaker2.png" alt="gamemaker2" />
+          <img src="src/icon/godot.png" alt="godot" />
+          <img src="src/icon/pico-8.png" alt="pico-8" />
+          <img src="src/icon/GDevelop.png" alt="gdevelop" />
+        </div>
+      </div>
+      <div id="my-games" style="margin-bottom: 80px"></div>
+      <div class="row">
+        <h1><b>My Games:</b></h1>
+      </div>
+      <div class="col" id="cards"></div>
+      <div id="social-media" style="margin-bottom: 80px"></div>
+      <div class="row">
+        <h1><b>Social Media:</b></h1>
+      </div>
+      <div class="social-media">
+        <a class="fa fa-twitter" style="color: cadetblue;" href="https://twitter.com/luife_games"></a>
+        <a class="fa fa-github" style="color: rgb(98, 61, 98);"href="https://github.com/Luifegames"></a>
+        <a
+          class="fa fa-youtube"
+          style="color: red"
+          href="https://www.youtube.com/channel/UCnb0xKjS_TQJ5OTwQGDsrVQ"
+        ></a>
+        <a class="fa fa-instagram" style="color: pink;" href="https://instagram.com/luife_games"></a>
       </div>
     </div>
-
-    <div class="container-logo">
-      <div class="sticky-top" id="container-logo">
-        <div id="logo">
-          <img class="logo" src="src/img/logo.png" alt="" />
-        </div>
-        <div class= "button-links">
-            <ul class="navbar-na" id="navbar-na" >
-              
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Who I'm?</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#my-game">My Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#social-media">Social Media</a>
-                </li>
-            </ul>
-        </div>
-      </div>
-      <div class="containe">
-        <div class="row">
-          <div class="offset-1 col-10">
-            <h1>Hello, <b>I'm Luife</b></h1>
-            <p style="background-color: white">
-              I'm a computer engineer. In my free time I develop
-              <b>videogames</b> as a hobby with the aim of acquiring a lot of
-              knowledge so that one day I can work for a video game industry.
-              With more than 5 years of experience making video games, I have
-              more than 10 video games published on <b>Itch.io</b>, from small
-              roguelike that are only played with the mouse, to funny stories
-              about African animals.
-            </p>
-          </div>
-        </div>
-        <div id="experience" style="margin-bottom: 80px;"></div>
-        <div class="row">
-          <h1><b>Experience:</b></h1>
-        </div>
-        <div class="row" >
-          <h3><b>Languages:</b></h3>
-        </div>
-        <div class="row">
-          <div class="language col-12">
-            <img src="/src/icon/c-original.png" alt="c-original" />
-            <img src="/src/icon/c.png" alt="c++" />
-            <img src="/src/icon/java-original.png" alt="java-original" />
-            <img src="/src/icon/javascript-js.png" alt="javascript-js" />
-            <img src="/src/icon/python.png" alt="python" />
-            <img src="/src/icon/vue.png" alt="vue" />
-          </div>
-        </div>
-        <div class="row">
-          <h3><b>Game Engine:</b></h3>
-        </div>
-        <div class="row">
-          <div class="language col-12">
-            <img src="/src/icon/gamemaker2.png" alt="gamemaker2" />
-            <img src="/src/icon/godot.png" alt="c" />
-          </div>
-        </div>
-        <div id="my-game" style="margin-bottom: 80px;"></div>
-        <div class="row">
-          <h1><b>My games:</b></h1>
-        </div>
-        <div class="col" id="cards"></div>
-      </div>
-     <div id="social-media" style="margin-bottom: 80px;"></div>
-        <div class="row">
-          <h1><b>Social Media:</b></h1>
-        </div>
-      <div class="social-media">
-      <a class ="fa fa-twitter" href="https://twitter.com/luife_games"></a>
-    <a class ="fa fa-github" href="https://github.com/Luifegames"></a>
-    <a class ="fa fa-youtube" href="https://www.youtube.com/channel/UCnb0xKjS_TQJ5OTwQGDsrVQ"></a>
-    <a class ="fa fa-instagram" href="https://instagram.com/luife_games"></a>
-      </div>
-    
   </body>
-   
 </html>
-

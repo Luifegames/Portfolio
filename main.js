@@ -94,7 +94,7 @@ function addCard(title, description, image, link) {
   const cardLink = document.createElement("a");
   cardLink.classList.add("btn", "btn-primary");
   cardLink.setAttribute("href", link);
-  cardLink.textContent = "View";
+  cardLink.textContent = "Play it!";
 
   // Añade el título, la descripción y el enlace al cuerpo de la tarjeta
   cardBody.appendChild(cardTitle);
@@ -117,27 +117,5 @@ function addCard(title, description, image, link) {
 }
 
 
-window.addEventListener("scroll", function() {
-  const logo = document.getElementById("logo");
-  const banner = this.document.getElementById("banner");
-   const nav = this.document.getElementById("navbar-na");
-  if (window.pageYOffset >= 250) {
-    // Mover el logo a la parte izquierda
-   logo.style.transition = "transform 1s";
-    logo.style.transform = "translateX(40px)";
-    banner.style.display = "none";
-     nav.style.transition = "opacity 1s";
-    nav.style.opacity = "1";
-    // logo.style.justifyContent = "left";
-  } else {
-    // Mover el logo de vuelta a la posición original
-    logo.style.transition = "transform 1s";
-    banner.style.display = "flex";
-    logo.style.transform = "translateX(100% )";
-    nav.style.transition = "opacity 1s";
-    nav.style.opacity = "0";
-    // logo.style.justifyContent = "center";
-  }
-});
 
 
