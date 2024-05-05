@@ -6,7 +6,9 @@ body {
     background-size: 70px;
 }
 
-
+.container{
+    background-color: white
+}
 
 h1 {
     text-align: center;
@@ -17,6 +19,8 @@ h3 {
 }
 
 .language {
+    display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -67,4 +71,10 @@ p {
     text-decoration: none;
     color: black;
     font-size: 60px;
+}
+
+@media screen and (max-width: 575px) {
+    .language{
+        display: block;
+    }
 }
